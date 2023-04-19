@@ -34,4 +34,8 @@ io.on("connection", (socket) => {
 	});
 });
 
+app.get("/", (req, res) => {
+	res("Hello World");
+}
+
 server.listen(4000, () => "Server is running on port 4000");
